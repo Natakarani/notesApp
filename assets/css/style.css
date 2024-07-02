@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+}
+header ul li {
+  list-style-type: none;
+}
+header .dark-btn {
+  background-color: rgb(209, 29, 13);
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+}
+header .light-btn {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+}
+header ul div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+header ul div i {
+  margin-top: 7px;
+}
+header ul div li {
+  font-weight: 500;
+  font-size: 17px;
+}
+header .home {
+  color: rgb(209, 29, 13);
+}
+header .login {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+header .login i {
+  font-size: 24px;
+  color: rgb(33, 28, 21);
+  /* position: relative; */
+}
+header .login p {
+  position: absolute;
+  top: 0px;
+  left: 28px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: rgb(209, 29, 13);
+  border-radius: 50%;
+  padding: 2px 7px;
+}
+/*intro*/
+.intro {
+  background-color: url(../images/image1.jpg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  animation: intro1 13s linear infinite;
+  position: relative;
+}
+
+.intro1 p {
+  color: yellow;
+  font-size: 20px;
+}
+.intro1 h1 {
+  font-size: 60px;
+}
+.intro1 button {
+  background-color: rgb(209, 29, 13);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 10px;
+  min-width: 230px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.intro1 {
+  width: 100%;
+  height: 100vh;
+  /* padding: 0 0 140 0px; */
+  background: linear-gradient(rgba(246, 246, 246, 0.1), rgba(7, 5, 5, 0.984));
+  color: white;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.introContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.followers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 150px;
+}
+.followers p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+@keyframes intro1 {
+  0% {
+    background: url(../images/image1.jpg) no-repeat center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+  }
+  25% {
+    background: url(../images/canoe-shore.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+  }
+  50% {
+    background: url(../images/image2.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    object-fit: contain;
+    height: 100vh;
+  }
+  100% {
+    background: url(../images/sea-beach.jpg) no-repeat center;
+    background-size: cover;
+    object-fit: contain;
+
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*dreamsTour*/
+.dreamTours {
+  padding: 8% 10%;
+  background-color: rgb(240, 240, 248);
+  display: flex;
+}
+.dreamTours-right {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  justify-content: center;
+  /* flex: 1; */
+}
+.dreamTours-right h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.dreamTours-right p {
+  color: rgb(76, 78, 81);
+}
+.ticks {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.ticks p {
+  font-weight: 500;
+}
+.ticks > div {
+  display: flex;
+  gap: 10px;
+}
+.ticks > :nth-child(1) i {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: red;
+}
+.ticks > :nth-child(2) i {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ticks > :nth-child(3) i {
+  background-color: rgb(255, 213, 0);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.ticks i {
+  font-size: 14px;
+}
+.readMore {
+  display: flex;
+  color: rgb(209, 29, 13);
+  align-items: center;
+  gap: 10px;
+}
+.readMore p {
+  color: rgb(209, 29, 13);
+}
+.readMore i {
+  color: rgb(209, 29, 13);
+  margin-top: 6px;
+}
+
+.dreamTours-left {
+  background-color: white;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* flex:1; */
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+::placeholder {
+  color: rgb(145, 148, 150);
+  font-weight: 500;
+}
+.form i {
+  font-size: 25px;
+  color: rgb(18, 199, 114);
+}
+.dreamTours-left input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.dreamTours-left button {
+  background-color: rgb(17, 183, 142);
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 240px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.srch-btn i {
+  margin-left: -10px;
+}
+.dreamTours-right .srch-btn {
+  display: flex;
+}
+/*stays*/
+.stays {
+  padding: 4% 5%;
+}
+.stays > div:first-child {
+  font-size: 17px;
+}
+.stays h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.stayImages img {
+  width: 100%;
+  height: 50%;
+}
+.stayImages {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.stayImages h2 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+/*travel*/
+.travel {
+  margin-top: 100px;
+  padding: 7% 4%;
+  display: flex;
+  background-color: aliceblue;
+  gap: 60px;
+}
+.travel-right {
+  flex: 1;
+}
+
+.travel-left img {
+  width: 100%;
+  height: 100%;
+}
+.travel-right h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.travel-right p {
+  margin-bottom: 40px;
+}
+.travel-right-images div {
+  background-color: white;
+  padding: 30px;
+  padding: 40px;
+  width: 47%;
+  box-shadow: 1px 1px 10px grey;
+  display: flex;
+  color: rgb(77, 80, 82);
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+}
+.travel-right-images > div:nth-child(1) i {
+  color: rgb(10, 176, 165);
+}
+.travel-right-images > div:nth-child(2) i {
+  color: rgba(217, 32, 32, 0.824);
+}
+.travel-right-images > div:nth-child(3) i {
+  color: rgb(255, 191, 0);
+}
+.travel-right-images > div:nth-child(4) i {
+  color: rgb(255, 0, 230);
+}
+.travel-right-images i {
+  font-size: 40px;
+}
+.travel-right-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*tour */
+.tour {
+  padding: 4% 6%;
+  color: white;
+}
+.tour h1 {
+  color: rgb(40, 39, 39);
+  text-align: center;
+  font-size: 46px;
+}
+.subheading {
+  color: rgb(34, 33, 33);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 17px;
+}
+.location {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.location i {
+  font-size: 20px;
+  color: rgb(255, 204, 0);
+}
+.tourPlace {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.location p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.heart {
+  display: flex;
+  gap: 20px;
+}
+.heart i {
+  color: black;
+  margin-top: 0px;
+  margin-left: 110px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 9px 9px 9px;
+}
+.heart p {
+  background-color: rgb(209, 29, 13);
+  border-radius: 10px;
+  max-width: 90px;
+  color: white;
+  padding: 4px 18px;
+}
+.tourImage .island {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.tourImage .time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  max-width: 90px;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border: 1.8px solid rgb(21, 174, 24);
+  color: rgb(21, 174, 24);
+}
+
+.tourFlex > div:nth-child(1) {
+  background: url(../images/canoe-shore.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.tourFlex > div:nth-child(2) {
+  background: url(../images/image2.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex > div:nth-child(3) {
+  background: url(../images/image3.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex > div:nth-child(4) {
+  background: url(../images/image1.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.tourFlex > div:nth-child(1)::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(rgba(244, 242, 242, 0.14), rgba(6, 6, 6, 0.905));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex > div:nth-child(2)::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(rgba(244, 242, 242, 0.14), rgba(6, 6, 6, 0.905));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex > div:nth-child(3)::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(rgba(244, 242, 242, 0.14), rgba(6, 6, 6, 0.905));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex > div:nth-child(4)::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(rgba(244, 242, 242, 0.14), rgba(6, 6, 6, 0.905));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tourFlex {
+  display: flex;
+  gap: 20px;
+}
+.tourImage {
+  line-height: 1.5;
+  z-index: 3;
+}
+.tourColor {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+/*trip*/
+
+.trips {
+  padding: 6%;
+  margin-bottom: -40px;
+}
+.pra1 {
+  display: flex;
+  gap: 20px;
+}
+.pra1 > div {
+  padding: 40px 20px 20px 10px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(189, 187, 187), -2px -2px 3px rgb(192, 187, 187);
+}
+.pra1 > div:nth-child(1) {
+  box-shadow: 2px 2px 2px transparent, -2px -2px 3px transparent;
+
+  text-align: left;
+  font-size: 25px;
+}
+.pra1 > div:nth-child(1) p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 2;
+}
+.pra1 > div i {
+  color: rgb(29, 180, 39);
+  font-size: 40px;
+}
+.pra1 > div h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/*destinaiotns*/
+.detinations {
+  padding: 6%;
+  margin: auto;
+}
+.destinationFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  align-items: center;
+}
+.dreamTours-left {
+  /* min-width: 400px; */
+  /* position: relative; */
+  flex: 1;
+}
+.dreamTours-left img {
+  width: 100%;
+}
+.destination-right {
+  flex: 2;
+  /* min-width: 400px; */
+  /* padding: 0 5% 0 0;
+  position: absolute; */
+  /* left: 55%; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-200px);
+}
+.destinationHeading {
+  /* margin-bottom: 20px;
+  margin-left: 70px; */
+}
+.destinationHeading h1 {
+  font-size: 35px;
+  /* margin-top: -60px; */
+}
+.destination-right img {
+  width: 100%;
+  /* height: 25vh; */
+}
+.firstRow {
+  display: flex;
+  gap: 20px;
+}
+.firstRow1 {
+  background-color: white;
+  border: 10px solid white;
+  box-shadow: 2px 2px 2px rgb(177, 174, 174), -2px -2px 3px rgb(202, 197, 197);
+}
+
+.secondRow {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+.rating > div {
+  display: flex;
+  align-items: center;
+}
+.rating > div i {
+  color: rgb(232, 211, 16);
+}
+
+/*footer*/
+footer {
+  background-color: rgb(2, 19, 70);
+  color: white;
+}
+.footer {
+  padding: 6%;
+  display: flex;
+  gap: 20px;
+}
+.iconFlex {
+  display: flex;
+  gap: 20px;
+}
+.footerIcon h2 {
+  margin-left: -70px;
+}
+.footerIcon {
+  display: flex;
+}
+.footer .logoFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer > div {
+  flex: 1;
+}
+.footer h5 {
+  font-size: 16px;
+}
+.footer .logoFooter > div {
+  display: flex;
+  /* gap: 20px; */
+}
+.footer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 2;
+}
+.footer > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 2;
+}
+.footer > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 2;
+}
+.footer > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 2;
+}
+.footer .subscribe {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 6px;
+  background: white;
+}
+.footer .subscribe input {
+  border: none;
+}
+.footer .subscribe button {
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(209, 29, 13);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 30px 12px 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
